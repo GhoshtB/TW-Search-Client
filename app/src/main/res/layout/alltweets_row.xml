@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:padding="@dimen/dimen_5dp"
+    >
+   <!--
+   app:cardElevation="@dimen/dimen_5dp"
+    app:contentPadding="@dimen/dimen_5dp"
+    app:cardCornerRadius="@dimen/dimen_5dp"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="@dimen/dimen_5dp"
+                android:src="@mipmap/ic_launcher"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp" />
+            <LinearLayout
+
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textName"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Aditya"
+                    android:textSize="@dimen/dimen_largtext"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textUser"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Aditya"
+                    android:textSize="@dimen/dimen_TextSmall"/>
+
+            </LinearLayout>
+            <LinearLayout
+             android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textFav"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/dimen_5dp"
+                    android:drawableRight="@drawable/ic_baseline_favorite"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Aditya"
+                    android:textSize="@dimen/dimen_TextSmall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textId"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Aditya"
+                    android:textSize="@dimen/dimen_TextSmall"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMsg"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:textColor="@android:color/black"
+            android:text="Aditya"
+            android:textSize="@dimen/dimen_TextSmall"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/edtAbout"
+      app:cardCornerRadius="@dimen/dimen_5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:cardElevation="@dimen/dimen_5dp"
+      app:contentPadding="@dimen/dimen_5dp"
+     android:layout_margin="20dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="4">
+      <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+
+          android:layout_width="0dp"
+          android:layout_weight="3"
+          android:layout_height="wrap_content"
+          app:borderColor="@android:color/holo_blue_dark"
+          app:borderWidth="2dp"
+          app:cornerRadius="8dp"
+          android:padding="10dp">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Text" />
+
+      </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+      <Button
+          android:id="@+id/btnSearch"
+          android:layout_width="0dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:text="SEARCH"
+          android:textColor="@android:color/white"
+          android:layout_weight="1"
+          android:layout_margin="@dimen/dimen_5dp"
+          android:background="@android:color/holo_blue_dark"/>
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    app:cardBackgroundColor="@android:color/white"
+    android:id="@+id/datasCard"
+    android:layout_below="@+id/edtAbout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    app:cardCornerRadius="@dimen/dimen_5dp"
+    app:cardElevation="@dimen/dimen_5dp"
+    android:layout_margin="@dimen/dimen_5dp">
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:padding="@dimen/dimen_5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/rvAllTweets"/>
+</androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+app:cardCornerRadius="@dimen/dimen_5dp"
+      android:id="@+id/nodatasCard"
+      android:layout_below="@+id/edtAbout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:cardElevation="@dimen/dimen_5dp"
+      android:layout_margin="@dimen/dimen_5dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_search"
+        android:layout_gravity="center"/>
+  </androidx.cardview.widget.CardView>
+
+
+  </RelativeLayout>

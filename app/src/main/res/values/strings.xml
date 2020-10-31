@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Slice Android Application</string>
+    <string name="edt_hint_about">edit item</string>
+    <string name="edt_title_about">Enter Text</string>
+</resources>
